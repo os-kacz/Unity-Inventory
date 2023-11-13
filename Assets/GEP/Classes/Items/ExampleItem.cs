@@ -22,5 +22,6 @@ public class ExampleItem : MonoBehaviour, IPickupable
     public void Pickup()
     {
         Destroy(gameObject);
+        Debug.Log(gameObject.name);
     }
 }
