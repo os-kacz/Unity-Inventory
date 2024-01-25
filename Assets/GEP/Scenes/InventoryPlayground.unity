@@ -1365,6 +1365,27 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1132522365}
   m_SourcePrefab: {fileID: 100100000, guid: 9a0f25e48d1a6aa4d8bd30a544139dc5, type: 3}
+--- !u!1 &950694864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7225226454402747168, guid: 4df9a87682b4e6647adb52038cc94cab,
+    type: 3}
+  m_PrefabInstance: {fileID: 6415725059456787555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &950694875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950694864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a5d9fa8a186a847acc7c29590aaa14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 6
+  inventorySystem:
+    inventorySlots: []
 --- !u!1 &1028513131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +2020,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4174508469755562980, guid: 4df9a87682b4e6647adb52038cc94cab,
         type: 3}
+      propertyPath: inventory
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174508469755562980, guid: 4df9a87682b4e6647adb52038cc94cab,
+        type: 3}
       propertyPath: inventoryController
       value: 
       objectReference: {fileID: 1132522365}
@@ -2065,7 +2091,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7225226454402747168, guid: 4df9a87682b4e6647adb52038cc94cab,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 950694875}
   m_SourcePrefab: {fileID: 100100000, guid: 4df9a87682b4e6647adb52038cc94cab, type: 3}
 --- !u!4 &8338988565591873055 stripped
 Transform:

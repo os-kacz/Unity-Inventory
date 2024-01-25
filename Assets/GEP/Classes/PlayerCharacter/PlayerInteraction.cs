@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public ItemTemplate ItemData;
     void OnCollisionEnter(Collision collision)
     {
         IPickupable pickupable = collision.gameObject.GetComponent<IPickupable>();
         if (pickupable != null)
         {
             pickupable.Pickup();
+            var inventory = collision.transform.GetComponent<InventoryHolder>();
+
+            if (!inventory) return;
+
+            if (inventory.InventorySystem.AddToInventory(ItemData,1))
+            {
+                return;
+            }
         }
     }
 }

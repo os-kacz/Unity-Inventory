@@ -12,5 +12,5 @@ public class ItemTemplate : ScriptableObject
     public int weight;
     public int value;
     public Sprite image;
-
+    public int stackSize;
 }
