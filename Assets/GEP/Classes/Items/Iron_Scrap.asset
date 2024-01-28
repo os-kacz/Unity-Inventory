@@ -18,4 +18,4 @@ MonoBehaviour:
   weight: 3
   value: 9
   image: {fileID: 0}
-  stackSize: 3
+  MaxStackSize: 3
