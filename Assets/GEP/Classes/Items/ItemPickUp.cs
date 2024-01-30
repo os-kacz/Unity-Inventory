@@ -8,11 +8,11 @@ public class ItemPickUp : MonoBehaviour
     public float PickUpRadius = 1f;
     public ItemTemplate ItemData;
 
-    private SphereCollider myCollider;
+    private CapsuleCollider myCollider;
 
     private void Awake()
     {
-        myCollider = GetComponent<SphereCollider>();
+        myCollider = GetComponent<CapsuleCollider>();
         myCollider.isTrigger = true;
         myCollider.radius = PickUpRadius;
     }
