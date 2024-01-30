@@ -13,4 +13,5 @@ public class ItemTemplate : ScriptableObject
     public int value;
     public Sprite image;
     public int MaxStackSize;
+    public GameObject ItemPrefab;
 }

@@ -19,3 +19,5 @@ MonoBehaviour:
   value: 3
   image: {fileID: 21300000, guid: 1a563e6acb9ede74b8f8d5676e29e948, type: 3}
   MaxStackSize: 9
+  ItemPrefab: {fileID: 5929766486106363628, guid: 7a0174e961f444a49bb573a91786245b,
+    type: 3}
